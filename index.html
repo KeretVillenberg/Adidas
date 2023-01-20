@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="et">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <title>Adidas webshop</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header class="d-flex h-center space-between">
-        <nav class="d-flex h-center" >
+        <nav class="d-flex h-center">
             <div class="logo">
                 <img src="/assets/icons/Adidas_Logo.svg" alt="">
-    
+
             </div>
             <div id="line"></div>
             <a href=""><i class="fa fa-store"></i></a>
@@ -32,15 +38,32 @@
             </nav>
             <a href="#" class="user-id"><img src="/assets/images/connor-wilkins-2crxTr4jCkc-unsplash.jpg" alt=""></a>
         </div>
-        <nav>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-        </nav>
-
     </header>
-    <section class="wrapper">
-
+    <section class="hero wrapper">
+        <img class="hero-img" src="/assets/images/NIKEtoss.png" alt="sneaker">
+        <h1 class="big-txt">Higher Earth</h1>
+        <div class="hero-copy">
+            <h4>7 Higher Earth sneakers</h4>
+            <p>Designed by people in Higher Earth</p>
+            <a class="btn btn-primary" href="#">Add to cart</a>
+        </div>
+        <div class="color-picker d-flex h-center">
+            <h5>Choose your color</h5>
+            <input type="color" name="red" value="#ff6347">
+            <input type="color" name="red" value="#477eff">
+            <input type="color" name="red" value="#cd47ff">
+            <input type="color" name="red" value="#a9a9a9">
+        </div>
+    </section>
+    <section>
+        <script>
+            var elem = document.querySelector(".hero-img");
+            window.addEventListener('scroll', function() {
+            var value = window.scrollY * 0.25;
+            elem.style.transform = `rotate(${value}deg)`; 
+            });
+        </script>
     </section>
 </body>
+
 </html>

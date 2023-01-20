@@ -103,6 +103,8 @@ p {
 .big-txt {
     font-family: grizzly;
     font-size: 10em;
+    mix-blend-mode: difference;
+    filter: invert(1);
 }
 
 h1,
@@ -144,6 +146,20 @@ small,
 
 /* END TYPOGRAPHY*/
 /* Global Styles */
+.btn {
+    padding: 8px 16px;
+    color: #363636;
+    text-decoration: none
+}
+
+.btn-primary {
+    background-color: tomato;
+    color: white;
+    border-radius: 30px;
+    padding: 16px 32px;
+    margin-top: 2em;
+}
+
 section,
 header {
     background-color: #f3f3f5;
@@ -165,28 +181,36 @@ header {
 
 .h-center {
     align-items: center;
+    align-items: baseline;
 }
 
 .active {
     color: rgb(142, 62, 233);
 }
+
 #line {
     border-left: 2px solid #e0e0e0;
     height: 40px;
     margin: 0 1em;
 }
+
 /* End Global Styles */
 /* Main styles */
 header {
     border-radius: 30px 30px 0 0;
-    margin: 4em auto;
+    margin: 4em auto 0;
     width: 90%;
     max-width: 1400px;
     opacity: 100%;
+    padding: 3em;
 }
 
 .logo {
     width: 4em;
+}
+
+.hero {
+    position: relative;
 }
 
 .user-id img {
@@ -194,6 +218,48 @@ header {
     height: 50px;
     background-color: burlywood;
     clip-path: circle(50% at 50% 50%);
+}
+
+.p {
+    margin: 1em;
+}
+
+.hero img {
+    transform: rotate(333deg);
+    margin: auto;
+}
+
+.hero .big-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-copy {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+}
+
+.hero-copy h4 {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.hero-copy p {
+    margin-bottom: 2em;
+
+}
+
+.color-picker h6 {
+    margin-right: 2em;
+}
+
+.color-picker input {
+    border: none;
+    height: 27px;
+    width: 27px;
 }
 
 /* End Main styles */
